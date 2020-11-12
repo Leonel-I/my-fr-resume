@@ -3,38 +3,53 @@
 
 <div class="w3-white w3-text-grey w3-card-4">
         <div class="w3-display-container">
-          <img src="{{profile.photo}}" style="width:100%" alt="Avatar">
+          <img src="data:image/png;base64,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" style="width:100%" alt="Avatar">
           <div class="w3-display-bottomleft w3-container w3-text-black">
-            <h2>{{profile.firstName}} {{profile.lastName}}</h2>
+            <h2>Leonel Inamagua
+            </h2>
           </div>
         </div>
         <div class="w3-container">
-          <p><i class="fa fa-briefcase fa-fw w3-margin-right w3-large w3-text-teal"></i>{{profile.profession}}</p>
-          <p><i class="fa fa-home fa-fw w3-margin-right w3-large w3-text-teal"></i>{{profile.address.city}} {{profile.address.country}}</p>
-          <p><i class="fa fa-envelope fa-fw w3-margin-right w3-large w3-text-teal"></i>{{profile.address.email}}</p>
-          <p><i class="fa fa-phone fa-fw w3-margin-right w3-large w3-text-teal"></i>{{profile.phoneNumbers[0].number}}</p>
+          <p><i class="fa fa-briefcase fa-fw w3-margin-right w3-large w3-text-teal"></i>Student</p>
+          <p><i class="fa fa-home fa-fw w3-margin-right w3-large w3-text-teal"></i>NYC {{profile.address.country}}</p>
+          <p><i class="fa fa-envelope fa-fw w3-margin-right w3-large w3-text-teal"></i>clinamagua@gmail.com</p>
+          <p><i class="fa fa-phone fa-fw w3-margin-right w3-large w3-text-teal"></i>651-354-4869</p>
           <hr>
 
-          <p class="w3-large"><b><i class="fa fa-asterisk fa-fw w3-margin-right w3-text-teal"></i>Skills</b></p>
-
-          <!-- Read in an array of skills from JSON-->
-          <div *ngFor="let skill of profile.skills">
-		        <p>{{skill.skill}}</p>
-             <div class="w3-light-grey w3-round-xlarge w3-small">
-              <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:{{skill.level}}">{{skill.level}}</div>
-             </div>
+         <p class="w3-large"><b><i class="fa fa-asterisk fa-fw w3-margin-right w3-text-teal"></i>Skills</b></p>
+          <p>Adobe Illustrator</p>
+          <div class="w3-light-grey w3-round-xlarge w3-small">
+            <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:90%">90%</div>
           </div>
-
+          <p>Adobe Photoshop</p>
+          <div class="w3-light-grey w3-round-xlarge w3-small">
+            <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:80%">
+              <div class="w3-center w3-text-white">80%</div>
+            </div>
+          </div>
+          <p>Graphic Design</p>
+          <div class="w3-light-grey w3-round-xlarge w3-small">
+            <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:85%">85%</div>
+          </div>
+          <p>coding</p>
+          <div class="w3-light-grey w3-round-xlarge w3-small">
+            <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:40%">40%</div>
+          </div>
           <br>
-          <p class="w3-large w3-text-theme"><b><i class="fa fa-globe fa-fw w3-margin-right w3-text-teal"></i>Languages</b></p>     
-        
-        <!-- Replacing hard coded language data with JSON Array    -->
-        <div *ngFor="let language of profile.languages">
-          <p>{{language.language}}</p>
+
+          <p class="w3-large w3-text-theme"><b><i class="fa fa-globe fa-fw w3-margin-right w3-text-teal"></i>Languages</b></p>
+          <p>Spanish</p>
           <div class="w3-light-grey w3-round-xlarge">
-            <div class="w3-round-xlarge w3-teal" style="height:24px;width:{{language.level}}"></div>
+            <div class="w3-round-xlarge w3-teal" style="height:24px;width:99%"></div>
           </div>
-        </div>
+          <p>English</p>
+          <div class="w3-light-grey w3-round-xlarge">
+            <div class="w3-round-xlarge w3-teal" style="height:24px;width:95%"></div>
+          </div>
+          <p></p>
+          <div class="w3-light-grey w3-round-xlarge">
+            
+          </div>
           <br>
         </div>
       </div><br>
